@@ -1,2 +1,3 @@
-# mentoria-todolist
-Projeto utilizado no processo de mentoria
+# Todo list
+
+Projeto utilizado no processo de mentoria.
