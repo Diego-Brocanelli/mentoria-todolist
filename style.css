@@ -1,0 +1,110 @@
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) { 
+    main {
+        width: 99%;
+        margin: 0 auto;
+    }
+}
+
+main h1, main h2 {
+    text-align: center;
+}
+
+/* form */
+main form {
+    border: 1px solid gray;
+    background-color: rgb(230, 230, 230);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+main form input {
+    height: 40px;
+    border:1px solid gray;
+    width: 75%;
+}
+
+main form button {
+    height: 45px;
+    width: 100px;
+    border-radius: 2px;
+    background-color: blue;
+    border:2px solid blue;
+    color:#ffffff;
+    float: right;
+}
+
+main form button:hover {
+    background-color: rgb(2, 2, 121);
+    border:2px solid rgb(2, 2, 121);
+    color:#ffffff;
+    cursor: pointer;
+}
+
+/* main todo list */
+main h2 {
+    background-color: blue;
+    color:#ffffff;
+    padding:20px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 20px;
+}
+
+main ul {
+    border: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+
+main ul li {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main ul li span {
+    font-weight: 700;
+}
+
+main ul li button {
+    float: right;
+}
+
+.button-done {
+    background-color: green;
+    border: 1px solid green;
+    color: #ffffff;
+    height: 35px;
+    width: 80px;
+    margin-left: 5px;
+
+}
+
+.task-done {
+    text-decoration: line-through;
+    font-weight: 100;
+    color:rgb(126, 125, 125);
+}
+
+.button-done:hover {
+    background-color: rgb(0, 92, 0);
+    border: 1px solid rgb(0, 92, 0);
+}
+
+.button-trash {
+    background-color: red;
+    border: 1px solid red;
+    color: #ffffff;
+    height: 35px;
+    width: 80px;
+}
+
+.button-trash:hover {
+    background-color: rgb(160, 2, 2);
+    border: 1px solid rgb(160, 2, 2);
+}

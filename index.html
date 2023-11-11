@@ -2,12 +2,33 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importo o arquivo javascript que contém todas as regras de negócio -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- Importo a folha de estilo que definirá todo o layout da aplicação -->
+    <link rel="stylesheet" href="style.css">
+
     <title>Todo List</title>
 </head>
 <body>
+    <!-- Defino todo o contúdo principal da minha tela -->
     <main>
-        <h1>Todo List</h1>
+        <!-- defino o título -->
+        <h1>Minha Lista de Tarefas</h1>
+        <!-- Formulário de cadastro de task -->
+        <form name="tasks">
+            <input type="text" name="task" placeholder="Tarefa" autofocus="true">
+
+            <button>Adicionar</button>
+        </form>
+        <!-- Título da lista de tarefas -->
+        <h2>Lista de tarefas</h2>
+
+        <!-- Lista de tarefas -->
+        <ul></ul>
     </main>
 </body>
 </html>
