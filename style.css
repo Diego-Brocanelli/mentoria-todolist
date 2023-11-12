@@ -1,8 +1,24 @@
+/*
+    O estilo do aplicativo é simples, e estou utilizando
+    a abordagem de declarar a main como referência.
+
+    Poderíamos utilizar sem, entretanto em projetos reais
+    será comum, por exemplo, ter mais de um formulário.
+
+    Por isso a abordagem de deixar declarado o caminho do elemento.
+*\
+
+/* Defino o conteúdo centralizado */
 main {
     width: 70%;
     margin: 0 auto;
 }
 
+/* 
+    para manter a responsividade, com isso utilizo
+    media query, e abaixo defino regras que será utilizado
+    em resoluções de até 750px
+*/
 @media only screen and (max-width: 750px) { 
     main {
         width: 99%;
@@ -10,11 +26,14 @@ main {
     }
 }
 
+/* centralizo os títulos */
 main h1, main h2 {
     text-align: center;
 }
 
-/* form */
+/* 
+    Inicio a estilização do formulário 
+*/
 main form {
     border: 1px solid gray;
     background-color: rgb(230, 230, 230);
@@ -22,12 +41,22 @@ main form {
     border-radius: 20px;
 }
 
+/* Declaro as regras do input de texto */
 main form input {
     height: 40px;
     border:1px solid gray;
     width: 75%;
 }
 
+/*
+    Defino as regras do botão de adicionar.
+
+    Como na lista estou utilizando botões menores, não criei
+    uma regra padrão de botão, estilizando apenas as cores.
+
+    Mas poderíamos criar uma classe base, por exemplo .button
+    e nessa classe definir a altura, largura e bordas.
+*/
 main form button {
     height: 45px;
     width: 100px;
@@ -38,6 +67,13 @@ main form button {
     float: right;
 }
 
+/* 
+    Abaixo temos um pseudo-elementos, :hover.
+    Isso indica que quando o mouse ficar em cima do botão
+    ele usará os estilos definidos abaixo.
+
+    No caso estilizo a cor, fonte e cursor.
+*/
 main form button:hover {
     background-color: rgb(2, 2, 121);
     border:2px solid rgb(2, 2, 121);
@@ -45,7 +81,9 @@ main form button:hover {
     cursor: pointer;
 }
 
-/* main todo list */
+/* Abaixo estão as regras da lista de tarefas */
+
+/* Estilização do título da lista */
 main h2 {
     background-color: blue;
     color:#ffffff;
@@ -55,26 +93,34 @@ main h2 {
     top: 20px;
 }
 
+/* EStilização da lista */
 main ul {
     border: 1px solid gray;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
 }
 
+/* Estilização dos itens da lista, as tarefas. */
 main ul li {
     list-style-type: none;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* 
+    Estou utilizando span para o texto da tarefa e 
+    para tarefas pendentes deixo ela com estaque (negrito)
+*/
 main ul li span {
     font-weight: 700;
 }
 
+/* Alinhamento dos botões da tarefa */
 main ul li button {
     float: right;
 }
 
+/* Estilos para os botões de concluído */
 .button-done {
     background-color: green;
     border: 1px solid green;
@@ -85,17 +131,20 @@ main ul li button {
 
 }
 
+/* Estilo para quando passar o mouse pelo botão concluído */
+.button-done:hover {
+    background-color: rgb(0, 92, 0);
+    border: 1px solid rgb(0, 92, 0);
+}
+
+/* Estilo para indicar que a task foi concluída */
 .task-done {
     text-decoration: line-through;
     font-weight: 100;
     color:rgb(126, 125, 125);
 }
 
-.button-done:hover {
-    background-color: rgb(0, 92, 0);
-    border: 1px solid rgb(0, 92, 0);
-}
-
+/* Estilos do botão remover */
 .button-trash {
     background-color: red;
     border: 1px solid red;
@@ -104,6 +153,7 @@ main ul li button {
     width: 80px;
 }
 
+/* Estilo para quando passar o mouse pelo botão remover */
 .button-trash:hover {
     background-color: rgb(160, 2, 2);
     border: 1px solid rgb(160, 2, 2);
