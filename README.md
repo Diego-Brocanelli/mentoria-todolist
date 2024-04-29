@@ -1,6 +1,6 @@
 # Todo list
 
-> Projeto utilizado no processo de mentoria.
+> Projeto que utilizei no processo de mentoria com os mentorados.
 
 Todo List é um app para gerênciamento de tarefas diárias.
 
